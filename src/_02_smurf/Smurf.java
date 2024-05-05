@@ -29,7 +29,7 @@ public class Smurf {
 	}
 
 	// Papa Smurf wears a red hat, all the others are white.
-	public String getHatColor(String name) {
+	public String getHatColor() {
 		String color = "";
 		// 3. Fill in this method
 		if (name.equals("Papa")) {
@@ -44,8 +44,15 @@ public class Smurf {
 
 	// Smurfette is the only female Smurf.
 	public String isGirlOrBoy() {
+		String gender = "";
 		// 4. Fill in this method
-		return "";
+		if (name.equals("Smurfette")) {
+			gender = "girl";
+		}
+		else {
+			gender = "boy";
+		}
+		return gender;
 	}
 
 }
